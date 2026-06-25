@@ -329,56 +329,62 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 16px 0;
+    padding: 12px 0;
     transition: all var(--transition);
-    background: transparent;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9);
+    background: #FFFFFF;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding: 10px 0;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 }
 
 .nav-container { display: flex; align-items: center; justify-content: space-between; }
 
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); }
+.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-primary); }
 .logo:hover { color: var(--text-primary); }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--gradient-primary);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 1.2rem;
-    color: var(--bg-dark);
-    box-shadow: 0 0 20px rgba(108, 60, 225, 0.3);
+    display: none;
 }
 
-.logo-text { font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; letter-spacing: -0.02em; }
-.logo-text strong { font-weight: 700; }
+.logo-text {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #1A1A2E;
+}
 
-.nav-links { display: flex; align-items: center; gap: 8px; }
+.logo-text strong {
+    font-weight: 700;
+    color: #F5A623;
+}
+
+.nav-links { display: flex; align-items: center; gap: 4px; }
 
 .nav-link {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text-secondary);
-    padding: 8px 14px;
-    border-radius: 8px;
+    color: #333;
+    padding: 8px 18px;
+    border-radius: 100px;
     transition: all var(--transition);
+    text-decoration: none;
 }
 
-.nav-link:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.05); }
-.nav-link.active { color: var(--accent); }
+.nav-link:hover { color: #1A1A2E; background: rgba(0, 0, 0, 0.04); }
+
+.nav-link.active {
+    color: #1A1A2E;
+    background: #F5A623;
+    font-weight: 600;
+}
 
 /* Dropdown */
 .nav-dropdown { position: relative; }
@@ -427,8 +433,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown-menu a:hover {
-    background: rgba(108, 60, 225, 0.1);
-    color: var(--accent);
+    background: rgba(245, 166, 35, 0.08);
+    color: #F5A623;
     padding-left: 20px;
 }
 
@@ -735,15 +741,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-link {
-    background: var(--gradient-primary);
-    color: var(--bg-dark) !important;
+    background: linear-gradient(135deg, #F5A623 0%, #F7C948 100%);
+    color: #1A1A2E !important;
     font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(108, 60, 225, 0.2);
+    padding: 10px 24px;
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.cta-link:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow); color: var(--bg-dark) !important; }
+.cta-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(245, 166, 35, 0.35);
+    color: #1A1A2E !important;
+    background: linear-gradient(135deg, #F7C948 0%, #F5A623 100%);
+}
 
 /* Hamburger */
 .hamburger {
@@ -2039,8 +2053,9 @@ textarea { resize: vertical; min-height: 100px; }
     }
 
     .nav-links.open { right: 0; }
-    .nav-link { font-size: 1rem; width: 100%; padding: 14px 16px; }
-    .cta-link { margin-top: 12px; text-align: center; }
+    .nav-link { font-size: 1rem; width: 100%; padding: 14px 16px; border-radius: 12px; }
+    .nav-link.active { border-radius: 12px; }
+    .cta-link { margin-top: 12px; text-align: center; border-radius: 12px !important; }
 
     .hero-title { font-size: 2.2rem; }
 

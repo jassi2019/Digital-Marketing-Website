@@ -3,176 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full-stack digital marketing services — SEO, Google Ads, Meta Ads, Social Media Marketing, Web Design & E-Commerce. DigionTop delivers 10X ROI for Indian brands.">
-    <meta name="keywords" content="digital marketing services India, SEO services, Google Ads management, social media marketing, Meta Ads agency, web design, e-commerce marketing, PPC agency">
-    <title>Digital Marketing Services India | SEO, PPC, Social Media | DigionTop</title>
-    <link rel="canonical" href="https://www.digiontop.com/services">
-    <meta property="og:title" content="Digital Marketing Services | DigionTop"><meta property="og:description" content="Full-stack digital marketing services — SEO, PPC, Social Media, Web Design & E-Commerce.">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Our Services — DigionTop Digital Marketing Agency</title>
+    <meta name="description" content="Explore our digital marketing services — SEO, Web Development, Social Media, PPC, E-Commerce and Content Marketing.">
     <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.digiontop.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.digiontop.com/services"}]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="cursor-glow" id="cursorGlow"></div>
-    <canvas class="particle-canvas" id="particleCanvas"></canvas>
 
-        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="DigionTop Home">
-                <span class="logo-text">Digionto<strong>p</strong></span>
-            </a>
-            <div class="nav-center">
-                <ul class="nav-links" id="navLinks">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">DigionTop</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="services.html" class="nav-link active">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
-                        <div class="dropdown-menu">
-                            <a href="seo.html">SEO Services</a>
-                            <a href="ppc.html">Google Ads &amp; PPC</a>
-                            <a href="social-media.html">Social Media Marketing</a>
-                            <a href="meta-ads.html">Meta / Facebook Ads</a>
-                            <a href="web-design.html">Web Design &amp; Development</a>
-                            <a href="ecommerce.html">E-Commerce &amp; Shopify</a>
-                        </div>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#seo">SEO Optimization</a></li>
+                            <li><a href="#web-design">Web Development</a></li>
+                            <li><a href="#social-media">Social Media</a></li>
+                            <li><a href="#ppc">PPC Advertising</a></li>
+                            <li><a href="#ecommerce">E-Commerce</a></li>
+                            <li><a href="#content">Content Marketing</a></li>
+                        </ul>
                     </li>
-                    <li><a href="case-studies.html" class="nav-link">Projects</a></li>
-                    <li><a href="pricing.html" class="nav-link">Why Us</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-            <a href="contact.html" class="nav-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                <span>Get Free Consultation</span>
-            </a>
-            <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <section class="page-header">
-        <div class="container">
-            <div class="breadcrumb"><a href="index.html">Home</a> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg> <span>Services</span></div>
-            <h1 class="page-title">Full-Stack <span class="gradient-text">Digital Marketing</span> Services</h1>
-            <p class="page-subtitle">Every service is engineered to drive measurable growth. No vanity metrics — only revenue-generating strategies.</p>
-        </div>
-    </section>
-
-    <section class="inner-section">
-        <div class="container">
-            <div class="services-grid">
-                <article class="service-card glass-card" data-animate="fade-up">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="3"/><path d="M30 30L42 42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M15 20h10M20 15v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
-                    <h3 class="service-title"><a href="seo.html">Search Engine Optimization (SEO)</a></h3>
-                    <p class="service-desc">Dominate Google rankings with our data-driven <strong>SEO services</strong>. Technical SEO, on-page optimization, link building & local SEO that drives organic traffic.</p>
-                    <ul class="service-features"><li>Technical SEO Audit & Fixes</li><li>Keyword Research & Content Strategy</li><li>High-Authority Link Building</li><li>Local SEO & Google Business Profile</li></ul>
-                    <a href="seo.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-
-                <article class="service-card glass-card" data-animate="fade-up" data-delay="100">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="3"/><path d="M16 28V20M24 28V16M32 28V22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div></div>
-                    <h3 class="service-title"><a href="ppc.html">Google Ads & PPC Management</a></h3>
-                    <p class="service-desc">Maximize every rupee with <strong>performance marketing</strong>. Google Ads, Shopping Ads & YouTube Ads managed by certified experts for the highest ROAS.</p>
-                    <ul class="service-features"><li>Google Search & Display Ads</li><li>Google Shopping & YouTube Ads</li><li>Landing Page Optimization</li><li>Conversion Tracking & A/B Testing</li></ul>
-                    <a href="ppc.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-
-                <article class="service-card glass-card" data-animate="fade-up" data-delay="200">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="6" stroke="currentColor" stroke-width="3"/><circle cx="12" cy="34" r="5" stroke="currentColor" stroke-width="3"/><circle cx="36" cy="34" r="5" stroke="currentColor" stroke-width="3"/><path d="M20 18L14 30M28 18L34 30M16 34h16" stroke="currentColor" stroke-width="2"/></svg></div></div>
-                    <h3 class="service-title"><a href="social-media.html">Social Media Marketing</a></h3>
-                    <p class="service-desc">Build a brand people love. Our <strong>social media agency</strong> creates scroll-stopping content for Instagram, Facebook, LinkedIn & Twitter that converts.</p>
-                    <ul class="service-features"><li>Content Strategy & Calendar</li><li>Reels, Stories & Carousel Design</li><li>Community Management</li><li>Influencer Marketing</li></ul>
-                    <a href="social-media.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-
-                <article class="service-card glass-card" data-animate="fade-up" data-delay="300">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M8 24c0-8.837 7.163-16 16-16s16 7.163 16 16-7.163 16-16 16S8 32.837 8 24z" stroke="currentColor" stroke-width="3"/><path d="M18 18l12 6-12 6V18z" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/></svg></div></div>
-                    <h3 class="service-title"><a href="meta-ads.html">Meta Ads & Facebook Advertising</a></h3>
-                    <p class="service-desc">Unlock 400M+ Indian users. Our <strong>Meta Ads</strong> specialists run hyper-targeted Facebook & Instagram ad campaigns at the lowest CPA.</p>
-                    <ul class="service-features"><li>Facebook & Instagram Ads</li><li>Retargeting & Lookalike Audiences</li><li>Creative A/B Testing</li><li>Dynamic Product Ads</li></ul>
-                    <a href="meta-ads.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-
-                <article class="service-card glass-card" data-animate="fade-up" data-delay="400">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="28" rx="3" stroke="currentColor" stroke-width="3"/><path d="M6 14h36M18 40h12M24 34v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div></div>
-                    <h3 class="service-title"><a href="web-design.html">Website Design & Development</a></h3>
-                    <p class="service-desc">Your website is your #1 salesperson. We build blazing-fast, conversion-optimized <strong>websites</strong> that turn visitors into customers 24/7.</p>
-                    <ul class="service-features"><li>Custom UI/UX Design</li><li>Mobile-First Development</li><li>E-commerce & Shopify</li><li>Core Web Vitals Optimization</li></ul>
-                    <a href="web-design.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-
-                <article class="service-card glass-card" data-animate="fade-up" data-delay="500">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon-wrap"><div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M6 6h6l4 20h20l4-14H16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="34" r="3" stroke="currentColor" stroke-width="3"/><circle cx="34" cy="34" r="3" stroke="currentColor" stroke-width="3"/></svg></div></div>
-                    <h3 class="service-title"><a href="ecommerce.html">E-Commerce & Shopify Solutions</a></h3>
-                    <p class="service-desc">Scale your online store to 7-figures. Our <strong>e-commerce experts</strong> handle Shopify, marketplace management & conversion optimization.</p>
-                    <ul class="service-features"><li>Shopify Store Setup & Design</li><li>Product Listing Optimization</li><li>Amazon & Flipkart Marketplace</li><li>E-Commerce Funnel Optimization</li></ul>
-                    <a href="ecommerce.html" class="service-cta">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="inner-section alt-bg">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Our Process</span>
-                <h2 class="section-title">How We <span class="gradient-text">Scale Your Brand</span></h2>
-            </div>
-            <div class="process-timeline">
-                <div class="process-step" data-animate="fade-up"><div class="step-number">01</div><div class="step-content"><h3>Discovery & Audit</h3><p>We analyze your brand, competitors, and market position to identify growth opportunities.</p></div></div>
-                <div class="process-step" data-animate="fade-up" data-delay="100"><div class="step-number">02</div><div class="step-content"><h3>Custom Strategy</h3><p>Tailored roadmap combining <a href="seo.html">SEO</a>, <a href="ppc.html">PPC</a>, <a href="social-media.html">social media</a> & <a href="web-design.html">web design</a> aligned to your goals.</p></div></div>
-                <div class="process-step" data-animate="fade-up" data-delay="200"><div class="step-number">03</div><div class="step-content"><h3>Execute & Optimize</h3><p>Launch campaigns, create content, build funnels, and A/B test everything for maximum ROI.</p></div></div>
-                <div class="process-step" data-animate="fade-up" data-delay="300"><div class="step-number">04</div><div class="step-content"><h3>Scale & Repeat</h3><p>Monthly reviews, double down on what works, cut what doesn't, and continuously scale.</p></div></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-banner"><div class="container"><div class="cta-content glass-card" data-animate="fade-up"><h2>Not Sure Which Service You Need? <span class="gradient-text">Let's Talk.</span></h2><p>Book a free 30-minute strategy call. We'll audit your current marketing and recommend the perfect service mix.</p><a href="contact.html" class="btn btn-primary btn-lg btn-glow"><span>Get Free Strategy Call</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div></section>
-
-        <footer class="footer">
-        <div class="container">
-            <div class="footer-main">
-                <div class="footer-col footer-brand-col">
-                    <div class="footer-logo"><span class="logo-text" style="font-size:1.5rem;">Digionto<strong>p</strong></span></div>
-                    <p class="footer-tagline">Digital Marketing Agency</p>
-                    <p class="footer-desc">We help brands rank higher, grow faster and generate more revenue with result-driven digital marketing strategies.</p>
-                    <div class="footer-contact-list">
-                        <a href="mailto:digiontop.agency@gmail.com" class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>digiontop.agency@gmail.com</a>
-                        <a href="tel:+919876543210" class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>+91 9877654321 | +91 7003596931</a>
-                        <span class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>India</span>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="footer-social-row"><span class="fsr-label">Follow Us</span><div class="footer-social-icons"><a href="#">In</a><a href="#">Fb</a><a href="#">X</a><a href="#">Li</a></div></div>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-heading">QUICK LINKS</h4>
-                    <ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Why Choose Us</a></li><li><a href="case-studies.html">Projects</a></li><li><a href="contact.html" class="footer-cta-link">Book Free Consultation</a></li></ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-heading">HAVE QUESTIONS?</h4>
-                    <p class="footer-desc">We're here to help you grow.</p>
-                    <h4 class="footer-heading" style="margin-top:28px;">NEWSLETTER</h4>
-                    <p class="footer-desc">Subscribe for updates, tips &amp; offers.</p>
-                    <form class="footer-newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed!';this.reset();"><input type="email" placeholder="Enter your email" required><button type="submit">Subscribe</button></form>
                 </div>
             </div>
-            <div class="footer-bottom-bar">
-                <p>&copy; 2026 <span class="text-gold">DigionTop</span>. All Rights Reserved.</p>
-                <p class="footer-motto">Your Growth. Our Mission.</p>
-                <div class="footer-payment"><span>We Accept</span><div class="payment-icons"><span class="pay-badge">Visa</span><span class="pay-badge pay-highlight">MC</span><span class="pay-badge">UPI</span><span class="pay-badge pay-highlight">PayPal</span></div></div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 data-aos="fade-up">Our <span class="gradient-text">Services</span></h1>
+        <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Services</span>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Comprehensive Digital <span class="gradient-text">Solutions</span></h2>
+                <p class="section-desc">End-to-end digital marketing services designed to grow your business online.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search rankings with proven SEO strategies for maximum visibility and organic traffic.</p>
+                    <a href="#seo" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive websites that convert visitors into customers with modern technology.</p>
+                    <a href="#web-design" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Social Media</h3>
+                    <p>Build brand presence across all platforms with engaging content strategies.</p>
+                    <a href="#social-media" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-ad"></i></div>
+                    <h3>PPC Advertising</h3>
+                    <p>Maximize ROI with targeted Google Ads, Meta Ads, and data-driven campaigns.</p>
+                    <a href="#ppc" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-Commerce</h3>
+                    <p>Launch and scale your online store with Shopify, WooCommerce, and custom solutions.</p>
+                    <a href="#ecommerce" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Content Marketing</h3>
+                    <p>Compelling content that tells your brand story — blogs, videos, infographics.</p>
+                    <a href="#content" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="services-detail">
+        <div class="container">
+
+            <!-- SEO -->
+            <div class="service-detail-card" id="seo">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3><i class="fas fa-search" style="color: var(--primary-light); margin-right: 10px;"></i> SEO Optimization</h3>
+                    <p>Our SEO experts use proven white-hat strategies to boost your search rankings and drive organic traffic. We focus on sustainable, long-term growth that keeps your business ahead of the competition.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Technical SEO Audit & Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Keyword Research & Strategy</li>
+                        <li><i class="fas fa-check-circle"></i> On-Page & Off-Page SEO</li>
+                        <li><i class="fas fa-check-circle"></i> Local SEO & Google My Business</li>
+                        <li><i class="fas fa-check-circle"></i> Link Building & Authority Growth</li>
+                        <li><i class="fas fa-check-circle"></i> Monthly Reporting & Analytics</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-left">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-detail-card" id="web-design">
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3><i class="fas fa-code" style="color: var(--primary-light); margin-right: 10px;"></i> Web Development</h3>
+                    <p>We build stunning, high-performance websites that look great on every device. From landing pages to full-scale web applications, our development team delivers pixel-perfect results.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Custom Website Design & Development</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive & Mobile-First Design</li>
+                        <li><i class="fas fa-check-circle"></i> WordPress & CMS Development</li>
+                        <li><i class="fas fa-check-circle"></i> Landing Page Design</li>
+                        <li><i class="fas fa-check-circle"></i> Website Speed Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> UI/UX Design</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-right">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="service-detail-card" id="social-media">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3><i class="fas fa-bullhorn" style="color: var(--primary-light); margin-right: 10px;"></i> Social Media Marketing</h3>
+                    <p>Grow your brand's social presence with strategic content, community management, and paid social campaigns that drive engagement and conversions.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Social Media Strategy & Planning</li>
+                        <li><i class="fas fa-check-circle"></i> Content Creation & Scheduling</li>
+                        <li><i class="fas fa-check-circle"></i> Instagram, Facebook & LinkedIn Management</li>
+                        <li><i class="fas fa-check-circle"></i> Community Engagement</li>
+                        <li><i class="fas fa-check-circle"></i> Influencer Marketing</li>
+                        <li><i class="fas fa-check-circle"></i> Analytics & Performance Reports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-left">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+
+            <!-- PPC -->
+            <div class="service-detail-card" id="ppc">
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3><i class="fas fa-ad" style="color: var(--primary-light); margin-right: 10px;"></i> PPC Advertising</h3>
+                    <p>Get instant visibility and high-quality leads with our data-driven PPC campaigns. We optimize every rupee of your ad spend for maximum return.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Google Ads (Search, Display, Shopping)</li>
+                        <li><i class="fas fa-check-circle"></i> Meta Ads (Facebook & Instagram)</li>
+                        <li><i class="fas fa-check-circle"></i> YouTube Advertising</li>
+                        <li><i class="fas fa-check-circle"></i> Remarketing & Retargeting</li>
+                        <li><i class="fas fa-check-circle"></i> A/B Testing & Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Conversion Tracking & ROI Reports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-right">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+            </div>
+
+            <!-- E-Commerce -->
+            <div class="service-detail-card" id="ecommerce">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3><i class="fas fa-shopping-cart" style="color: var(--primary-light); margin-right: 10px;"></i> E-Commerce Solutions</h3>
+                    <p>Launch, manage, and scale your online store with our comprehensive e-commerce solutions. From setup to optimization, we handle everything.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Shopify Store Setup & Customization</li>
+                        <li><i class="fas fa-check-circle"></i> WooCommerce Development</li>
+                        <li><i class="fas fa-check-circle"></i> Product Listing & Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Inventory & Order Management</li>
+                        <li><i class="fas fa-check-circle"></i> E-Commerce Marketing Strategy</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-left">
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+
+            <!-- Content Marketing -->
+            <div class="service-detail-card" id="content">
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3><i class="fas fa-pen-nib" style="color: var(--primary-light); margin-right: 10px;"></i> Content Marketing</h3>
+                    <p>Content is king. We create compelling, SEO-optimized content that educates, engages, and converts your target audience into loyal customers.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Blog Writing & Guest Posting</li>
+                        <li><i class="fas fa-check-circle"></i> Video Content Production</li>
+                        <li><i class="fas fa-check-circle"></i> Infographic Design</li>
+                        <li><i class="fas fa-check-circle"></i> Email Marketing Campaigns</li>
+                        <li><i class="fas fa-check-circle"></i> Brand Storytelling</li>
+                        <li><i class="fas fa-check-circle"></i> Content Strategy & Calendar</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-detail-visual" data-aos="fade-right">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your <span class="gradient-text">Project</span>?</h2>
+                <p>Tell us about your business goals and we'll craft the perfect digital strategy for you.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-white btn-lg">Get Free Consultation <i class="fas fa-arrow-right"></i></a>
+                    <a href="tel:+919217594664" class="btn btn-outline-white btn-lg"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
+                    </a>
+                    <p>India's remote-first digital marketing agency delivering SEO, web development, social media, PPC and e-commerce solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#seo">SEO Optimization</a></li>
+                        <li><a href="#web-design">Web Development</a></li>
+                        <li><a href="#social-media">Social Media</a></li>
+                        <li><a href="#ppc">PPC Advertising</a></li>
+                        <li><a href="#ecommerce">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li>
+                        <li><i class="fas fa-language"></i> English, Hindi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DigionTop. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
-    <a href="#" class="back-to-top" id="backToTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></a>
-    <a href="https://wa.me/919876543210?text=Hi%20DigionTop!" class="whatsapp-float" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="whatsapp-pulse"></span></a>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
     <script src="js/main.js"></script>
 </body>
 </html>

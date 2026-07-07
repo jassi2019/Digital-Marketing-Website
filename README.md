@@ -1,91 +1,69 @@
 # DigionTop — Digital Marketing Agency Website
 
-> India's #1 ROI-Driven Digital Marketing Agency | SEO, Web Design & E-Commerce
+> India's Remote-First Digital Marketing Agency | SEO, Web Development, Social Media, PPC & E-Commerce
 
-[![Live Demo](https://img.shields.io/badge/Live-digiontop--topaz.vercel.app-00E5A0?style=for-the-badge&logo=vercel)](https://digiontop-topaz.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-jassi2019-6C3CE1?style=for-the-badge&logo=github)](https://github.com/jassi2019/Digital-Marketing-Website)
+[![Live Demo](https://img.shields.io/badge/Live-digiontop--topaz.vercel.app-6c5ce7?style=for-the-badge&logo=vercel)](https://digiontop-topaz.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-jassi2019-00cec9?style=for-the-badge&logo=github)](https://github.com/jassi2019/Digital-Marketing-Website)
 
 ---
 
 ## About
 
-DigionTop is a premium, multi-page digital marketing agency website built with pure HTML, CSS & JavaScript. Designed to generate leads, rank on Google, and convert visitors into paying clients.
+DigionTop is a modern, multi-page digital marketing agency website built with pure HTML, CSS & JavaScript. Features a dark premium theme with smooth animations, gradient accents, and a fully responsive design.
+
+## Live Preview
+
+**[https://digiontop-topaz.vercel.app](https://digiontop-topaz.vercel.app)**
 
 ## Pages
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | `index.html` | Hero, stats, brand ticker, services overview, results, why us, process, case studies, pricing, testimonials, FAQ, CTA, contact |
-| About Us | `about.html` | Agency story, mission, vision, team, culture, achievements |
-| Services | `services.html` | All 6 services with detailed descriptions |
-| SEO Services | `seo.html` | Dedicated SEO service page with deep content |
-| Google Ads & PPC | `ppc.html` | Dedicated PPC/Google Ads service page |
-| Social Media Marketing | `social-media.html` | Dedicated social media marketing page |
-| Meta/Facebook Ads | `meta-ads.html` | Dedicated Meta Ads service page |
-| Web Design | `web-design.html` | Dedicated web design & development page |
-| E-Commerce & Shopify | `ecommerce.html` | Dedicated e-commerce solutions page |
-| Case Studies | `case-studies.html` | Detailed client success stories |
-| Pricing | `pricing.html` | Transparent pricing plans & comparison |
-| Blog | `blog.html` | Marketing insights, tips & articles |
-| Contact | `contact.html` | Contact form, map, details, WhatsApp |
+| Home | `index.html` | Hero section, services overview, about/why us, stats counter, process steps, testimonial slider, CTA |
+| About | `about.html` | Agency story, mission/vision/values, stats, team section |
+| Services | `services.html` | 6 services overview + detailed service sections with feature lists |
+| Contact | `contact.html` | Contact info cards, full form with service & budget dropdowns, CTA |
 
 ## Tech Stack
 
 - **HTML5** — Semantic, accessible markup
-- **CSS3** — Custom properties, glassmorphism, animations, responsive grid
-- **JavaScript** — Vanilla JS, no frameworks, no dependencies
+- **CSS3** — Custom properties, gradients, glassmorphism, animations, responsive grid
+- **JavaScript** — Vanilla JS, zero dependencies
 - **Fonts** — Inter + Space Grotesk (Google Fonts)
+- **Icons** — Font Awesome 6.5
 
-## Design Features
+## Design & Effects
 
-- Dark premium theme with purple-to-green gradient system
-- Particle canvas background with connected dots
-- Cursor glow effect (desktop)
-- Glassmorphism cards with backdrop blur
-- Smooth preloader with animated progress bar
-- 3D tilt effect on cards
-- Magnetic hover on CTA buttons
-- WhatsApp floating button with pulse animation
-- Fully responsive (mobile-first)
-- Scroll reveal animations
-- Animated counters
-- FAQ accordion
-
-## SEO Optimizations
-
-- Schema.org structured data (LocalBusiness, FAQ, BreadcrumbList)
-- Open Graph & Twitter Card meta tags
-- High-CTR keywords throughout all pages
-- 100+ internal links across pages
-- Semantic HTML5 with ARIA labels
-- Canonical URLs on every page
-- Optimized meta titles & descriptions
-- Image alt tags
-- Fast loading (no frameworks, minimal JS)
+- Dark modern theme with purple (#6c5ce7) & teal (#00cec9) gradient system
+- Custom animated cursor (dot + follower with hover effects)
+- Preloader with gradient animated progress bar
+- Floating gradient blobs background with grid overlay
+- Scroll-triggered animations (fade-up, fade-left, zoom-in)
+- Animated number counters on scroll
+- Testimonial slider with auto-play, dots & arrow navigation
+- 3D tilt effect on service & process cards
+- Magnetic hover effect on buttons
+- Infinite marquee/ticker section
+- Parallax effect on hero section
+- Sticky header with blur-on-scroll (glassmorphism)
+- Back-to-top button with smooth scroll
+- Mobile responsive with hamburger menu
+- Contact form with animated submit state
 
 ## Folder Structure
 
 ```
 Digital-Marketing-Website/
-├── index.html              # Home page
-├── about.html              # About Us
-├── services.html           # All Services
-├── seo.html                # SEO Service
-├── ppc.html                # Google Ads & PPC
-├── social-media.html       # Social Media Marketing
-├── meta-ads.html           # Meta/Facebook Ads
-├── web-design.html         # Web Design & Development
-├── ecommerce.html          # E-Commerce & Shopify
-├── case-studies.html        # Case Studies
-├── pricing.html            # Pricing Plans
-├── blog.html               # Blog/Articles
-├── contact.html            # Contact Us
+├── index.html          # Homepage
+├── about.html          # About Us
+├── services.html       # Services
+├── contact.html        # Contact Us
 ├── css/
-│   └── style.css           # Main stylesheet
+│   └── style.css       # Full stylesheet (~1200 lines)
 ├── js/
-│   └── main.js             # Main JavaScript
-├── images/                 # Image assets
-└── README.md               # This file
+│   └── main.js         # Animations & effects (~250 lines)
+├── images/             # Image assets
+└── README.md           # This file
 ```
 
 ## Quick Start
@@ -98,13 +76,19 @@ git clone https://github.com/jassi2019/Digital-Marketing-Website.git
 open index.html
 ```
 
-No build tools, no npm install, no dependencies. Just open and go.
+No build tools, no npm, no dependencies. Just open and go.
 
 ## Deployment
 
-Deployed on **Vercel** with auto-deploy on push to `main`.
+Deployed on **Vercel** with production alias.
 
 Live: [https://digiontop-topaz.vercel.app](https://digiontop-topaz.vercel.app)
+
+## Contact
+
+- **Email:** digiontop.agency@gmail.com
+- **Phone:** +91-9217594664
+- **Twitter/X:** [@digiontopagency](https://x.com/digiontopagency)
 
 ## License
 

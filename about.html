@@ -3,244 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About DigionTop — India's top-rated digital marketing agency. Learn our story, meet our team, and discover why 200+ brands trust us to scale their revenue 10X.">
-    <meta name="keywords" content="about DigionTop, digital marketing agency India, best marketing company, our team, agency story">
-    <meta name="robots" content="index, follow">
-    <title>About Us | DigionTop — India's #1 Digital Marketing Agency</title>
-    <link rel="canonical" href="https://www.digiontop.com/about">
-    <meta property="og:title" content="About DigionTop — Our Story, Team & Mission">
-    <meta property="og:description" content="Learn why 200+ brands trust DigionTop to scale their revenue 10X with data-driven digital marketing.">
-    <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>About Us — DigionTop Digital Marketing Agency</title>
+    <meta name="description" content="Learn about DigionTop — India's remote-first digital marketing agency with 5+ years of experience.">
     <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.digiontop.com/"},{"@type":"ListItem","position":2,"name":"About Us","item":"https://www.digiontop.com/about"}]}
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="cursor-glow" id="cursorGlow"></div>
-    <canvas class="particle-canvas" id="particleCanvas"></canvas>
 
-        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="DigionTop Home">
-                <span class="logo-text">Digionto<strong>p</strong></span>
-            </a>
-            <div class="nav-center">
-                <ul class="nav-links" id="navLinks">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">DigionTop</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link active">About</a></li>
-                    <li class="nav-dropdown">
-                        <a href="services.html" class="nav-link">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
-                        <div class="dropdown-menu">
-                            <a href="seo.html">SEO Services</a>
-                            <a href="ppc.html">Google Ads &amp; PPC</a>
-                            <a href="social-media.html">Social Media Marketing</a>
-                            <a href="meta-ads.html">Meta / Facebook Ads</a>
-                            <a href="web-design.html">Web Design &amp; Development</a>
-                            <a href="ecommerce.html">E-Commerce &amp; Shopify</a>
-                        </div>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#seo">SEO Optimization</a></li>
+                            <li><a href="services.html#web-design">Web Development</a></li>
+                            <li><a href="services.html#social-media">Social Media</a></li>
+                            <li><a href="services.html#ppc">PPC Advertising</a></li>
+                            <li><a href="services.html#ecommerce">E-Commerce</a></li>
+                            <li><a href="services.html#content">Content Marketing</a></li>
+                        </ul>
                     </li>
-                    <li><a href="case-studies.html" class="nav-link">Projects</a></li>
-                    <li><a href="pricing.html" class="nav-link">Why Us</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-            <a href="contact.html" class="nav-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                <span>Get Free Consultation</span>
-            </a>
-            <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
-            <div class="breadcrumb"><a href="index.html">Home</a> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg> <span>About Us</span></div>
-            <h1 class="page-title">The Story Behind <span class="gradient-text">DigionTop</span></h1>
-            <p class="page-subtitle">We started with one mission — help Indian brands dominate the digital space with strategies that actually generate revenue, not just vanity metrics.</p>
+        <h1 data-aos="fade-up">About <span class="gradient-text">Us</span></h1>
+        <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>About Us</span>
         </div>
     </section>
 
-    <!-- Our Story -->
-    <section class="inner-section">
+    <!-- About Detail -->
+    <section class="about-section">
         <div class="container">
-            <div class="service-detail-grid" data-animate="fade-up">
-                <div class="service-detail-content">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
                     <span class="section-tag">Our Story</span>
-                    <h2>From a Small Team to <span class="gradient-text">India's Most Trusted</span> Digital Agency</h2>
-                    <p>DigionTop was born out of frustration. We saw brands spending lakhs on agencies that delivered nothing but fancy reports and zero results. We knew there had to be a better way.</p>
-                    <p>Founded in 2021, we started with just 3 people and one obsession — <strong>measurable ROI</strong>. Today, we're a full-stack <a href="services.html">digital marketing agency</a> with 200+ brands scaled, ₹50Cr+ revenue generated, and a team of 25+ specialists across <a href="seo.html">SEO</a>, <a href="ppc.html">PPC</a>, <a href="social-media.html">social media</a>, <a href="web-design.html">web design</a>, and <a href="ecommerce.html">e-commerce</a>.</p>
-                    <p>We don't chase awards. We chase results. Every strategy, every campaign, every rupee spent ties back to one thing — your revenue growth.</p>
+                    <h2 class="section-title">Building Digital <span class="gradient-text">Success Stories</span></h2>
+                    <p>DigionTop started with a simple mission — help businesses grow online with honest, data-driven digital marketing. As India's remote-first agency, we bring together the best talent from across the country.</p>
+                    <p>We believe in transparency, results, and building long-term partnerships. Every campaign we run, every website we build, and every strategy we craft is designed to deliver measurable growth for your business.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                            <div>
+                                <h4>Mission</h4>
+                                <p>To empower businesses with digital strategies that drive real, measurable growth.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                            <div>
+                                <h4>Vision</h4>
+                                <p>To be India's most trusted and result-oriented digital marketing partner.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <h4>Values</h4>
+                                <p>Transparency, innovation, accountability, and client-first approach in everything we do.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-detail-visual">
-                    <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="2" opacity="0.3"/><circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="2" opacity="0.5"/><circle cx="100" cy="100" r="20" fill="currentColor" opacity="0.2"/><path d="M60 140L100 60L140 140" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Vision -->
-    <section class="inner-section alt-bg">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Mission & Vision</span>
-                <h2 class="section-title">What <span class="gradient-text">Drives Us</span></h2>
-            </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-                <div class="glass-card" style="padding:40px 32px;border-radius:20px;" data-animate="fade-up">
-                    <h3 style="margin-bottom:12px;">Our Mission</h3>
-                    <p>To democratize world-class digital marketing for Indian businesses of every size — from bootstrapped startups to enterprise brands — by delivering transparent, ROI-driven strategies that turn ad spend into real revenue.</p>
-                </div>
-                <div class="glass-card" style="padding:40px 32px;border-radius:20px;" data-animate="fade-up" data-delay="100">
-                    <h3 style="margin-bottom:12px;">Our Vision</h3>
-                    <p>To become India's most respected digital growth partner — not by being the biggest, but by being the most result-obsessed agency that brands trust with their growth. We measure success in your revenue, not our headcount.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section class="inner-section">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Our Team</span>
-                <h2 class="section-title">Meet the <span class="gradient-text">Growth Experts</span></h2>
-                <p class="section-subtitle">A team of 25+ specialists obsessed with one thing — scaling your brand's revenue.</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card" data-animate="fade-up">
-                    <div class="team-avatar">LM</div>
-                    <h4>Lakshay Mehra</h4>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="team-card" data-animate="fade-up" data-delay="100">
-                    <div class="team-avatar">RK</div>
-                    <h4>Riya Kapoor</h4>
-                    <p>Head of SEO</p>
-                </div>
-                <div class="team-card" data-animate="fade-up" data-delay="200">
-                    <div class="team-avatar">AV</div>
-                    <h4>Arjun Verma</h4>
-                    <p>Head of Paid Ads</p>
-                </div>
-                <div class="team-card" data-animate="fade-up" data-delay="300">
-                    <div class="team-avatar">NS</div>
-                    <h4>Neha Sharma</h4>
-                    <p>Creative Director</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values -->
-    <section class="inner-section alt-bg">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Our Values</span>
-                <h2 class="section-title">What We <span class="gradient-text">Stand For</span></h2>
-            </div>
-            <div class="why-grid">
-                <div class="why-card glass-card" data-animate="fade-up">
-                    <div class="why-number">01</div>
-                    <h3>Results Over Everything</h3>
-                    <p>We don't celebrate impressions. We celebrate revenue. Every decision we make ties back to your bottom line.</p>
-                </div>
-                <div class="why-card glass-card" data-animate="fade-up" data-delay="100">
-                    <div class="why-number">02</div>
-                    <h3>Radical Transparency</h3>
-                    <p>No jargon-filled reports. Real-time dashboards, honest conversations, and zero hidden fees.</p>
-                </div>
-                <div class="why-card glass-card" data-animate="fade-up" data-delay="200">
-                    <div class="why-number">03</div>
-                    <h3>Client-First Always</h3>
-                    <p>We earn your trust every month. No lock-in contracts — because great work doesn't need handcuffs.</p>
-                </div>
-                <div class="why-card glass-card" data-animate="fade-up" data-delay="300">
-                    <div class="why-number">04</div>
-                    <h3>Continuous Innovation</h3>
-                    <p>Digital moves fast. We move faster. Our team stays ahead of every algorithm change and platform update.</p>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-pattern"></div>
+                        <div class="about-stats-card">
+                            <div class="mini-stat">
+                                <i class="fas fa-trophy"></i>
+                                <div>
+                                    <strong>98%</strong>
+                                    <span>Client Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-stats-card card-2">
+                            <div class="mini-stat">
+                                <i class="fas fa-arrow-trend-up"></i>
+                                <div>
+                                    <strong>3x</strong>
+                                    <span>Average ROI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats -->
-    <section class="inner-section">
+    <section class="stats-section">
         <div class="container">
-            <div class="results-grid">
-                <div class="result-card glass-card" data-animate="fade-up">
-                    <div class="result-number"><span data-count="200">0</span>+</div>
-                    <div class="result-label">Brands Scaled</div>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="counter" data-count="150">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Projects Completed</p>
                 </div>
-                <div class="result-card glass-card" data-animate="fade-up" data-delay="100">
-                    <div class="result-number"><span data-count="50">0</span>Cr+</div>
-                    <div class="result-label">Revenue Generated</div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <h3 class="counter" data-count="50">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Happy Clients</p>
                 </div>
-                <div class="result-card glass-card" data-animate="fade-up" data-delay="200">
-                    <div class="result-number"><span data-count="4.9">0</span>/5</div>
-                    <div class="result-label">Google Rating</div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="counter" data-count="5">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Years Experience</p>
                 </div>
-                <div class="result-card glass-card" data-animate="fade-up" data-delay="300">
-                    <div class="result-number"><span data-count="25">0</span>+</div>
-                    <div class="result-label">Team Members</div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="counter" data-count="10">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p>Industries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the <span class="gradient-text">Experts</span></h2>
+                <p class="section-desc">A talented team of digital marketing professionals passionate about driving results.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="team-avatar">JS</div>
+                    <h4>Jassi Singh</h4>
+                    <span>Founder & CEO</span>
+                    <p>Digital marketing strategist with 5+ years of experience helping brands grow online.</p>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-avatar">AK</div>
+                    <h4>Ankit Kumar</h4>
+                    <span>SEO Lead</span>
+                    <p>Expert in technical SEO, link building, and organic growth strategies.</p>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-avatar">NR</div>
+                    <h4>Neha Rawat</h4>
+                    <span>Creative Director</span>
+                    <p>Creative mind behind our stunning designs, brand identities, and visual campaigns.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta-banner">
+    <section class="cta-section">
         <div class="container">
-            <div class="cta-content glass-card" data-animate="fade-up">
-                <h2>Ready to Work With a <span class="gradient-text">Team That Delivers?</span></h2>
-                <p>Book a free strategy call and see why 200+ brands trust DigionTop as their growth partner.</p>
-                <a href="contact.html" class="btn btn-primary btn-lg btn-glow"><span>Get Free Strategy Call</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Want to Work <span class="gradient-text">With Us</span>?</h2>
+                <p>Join our growing list of happy clients. Let's build something amazing together.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-white btn-lg">Get In Touch <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-main">
-                <div class="footer-col footer-brand-col">
-                    <div class="footer-logo"><span class="logo-text" style="font-size:1.5rem;">Digionto<strong>p</strong></span></div>
-                    <p class="footer-tagline">Digital Marketing Agency</p>
-                    <p class="footer-desc">We help brands rank higher, grow faster and generate more revenue with result-driven digital marketing strategies.</p>
-                    <div class="footer-contact-list">
-                        <a href="mailto:digiontop.agency@gmail.com" class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span>digiontop.agency@gmail.com</a>
-                        <a href="tel:+919876543210" class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>+91 9877654321 | +91 7003596931</a>
-                        <span class="footer-contact-link"><span class="fci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>India</span>
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
+                    </a>
+                    <p>India's remote-first digital marketing agency delivering SEO, web development, social media, PPC and e-commerce solutions.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <div class="footer-social-row"><span class="fsr-label">Follow Us</span><div class="footer-social-icons"><a href="#">In</a><a href="#">Fb</a><a href="#">X</a><a href="#">Li</a></div></div>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-heading">QUICK LINKS</h4>
-                    <ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Why Choose Us</a></li><li><a href="case-studies.html">Projects</a></li><li><a href="contact.html" class="footer-cta-link">Book Free Consultation</a></li></ul>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-heading">HAVE QUESTIONS?</h4>
-                    <p class="footer-desc">We're here to help you grow.</p>
-                    <h4 class="footer-heading" style="margin-top:28px;">NEWSLETTER</h4>
-                    <p class="footer-desc">Subscribe for updates, tips &amp; offers.</p>
-                    <form class="footer-newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed!';this.reset();"><input type="email" placeholder="Enter your email" required><button type="submit">Subscribe</button></form>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                        <li><a href="services.html#web-design">Web Development</a></li>
+                        <li><a href="services.html#social-media">Social Media</a></li>
+                        <li><a href="services.html#ppc">PPC Advertising</a></li>
+                        <li><a href="services.html#ecommerce">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li>
+                        <li><i class="fas fa-language"></i> English, Hindi</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom-bar">
-                <p>&copy; 2026 <span class="text-gold">DigionTop</span>. All Rights Reserved.</p>
-                <p class="footer-motto">Your Growth. Our Mission.</p>
-                <div class="footer-payment"><span>We Accept</span><div class="payment-icons"><span class="pay-badge">Visa</span><span class="pay-badge pay-highlight">MC</span><span class="pay-badge">UPI</span><span class="pay-badge pay-highlight">PayPal</span></div></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DigionTop. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
-    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></a>
-    <a href="https://wa.me/919876543210?text=Hi%20DigionTop!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="whatsapp-pulse"></span></a>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
     <script src="js/main.js"></script>
 </body>
 </html>

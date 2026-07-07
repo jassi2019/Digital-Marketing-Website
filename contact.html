@@ -11,25 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div id="preloader"><div class="loader"><span class="loader-text">DIGIONTOP</span><div class="loader-bar"></div></div></div>
+    <div class="page-transition" id="pageTransition"><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div></div>
+    <canvas id="particleCanvas"></canvas>
 
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-            <span class="loader-text">DigionTop</span>
-            <div class="loader-bar"></div>
-        </div>
-    </div>
-
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-follower"></div>
-
-    <!-- Navigation -->
     <header id="header">
         <nav class="navbar">
             <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
-                </a>
+                <a href="index.html" class="logo"><span class="logo-text">Digion<span class="logo-highlight">Top</span></span></a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
@@ -47,77 +36,48 @@
                     <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
-                    <div class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
         <h1 data-aos="fade-up">Contact <span class="gradient-text">Us</span></h1>
         <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
-            <a href="index.html">Home</a>
-            <span>/</span>
-            <span>Contact</span>
+            <a href="index.html">Home</a><span>/</span><span>Contact</span>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
             <div class="contact-grid">
-                <!-- Contact Info -->
                 <div class="contact-info" data-aos="fade-right">
-                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--white); margin-bottom: 8px;">Get In Touch</h3>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--white); margin-bottom: 8px; letter-spacing: -0.5px;">Get In Touch</h3>
                     <p style="color: var(--text-muted); margin-bottom: 30px; line-height: 1.8;">Have a project in mind? We'd love to hear from you. Send us a message and we'll respond within 24 hours.</p>
 
                     <div class="contact-info-card">
                         <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email Us</h4>
-                            <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a>
-                        </div>
+                        <div><h4>Email Us</h4><a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></div>
                     </div>
-
                     <div class="contact-info-card">
                         <div class="info-icon"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h4>Call Us</h4>
-                            <a href="tel:+919217594664">+91-9217594664</a>
-                        </div>
+                        <div><h4>Call Us</h4><a href="tel:+919217594664">+91-9217594664</a></div>
                     </div>
-
                     <div class="contact-info-card">
                         <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>India (Remote-First Agency)</p>
-                        </div>
+                        <div><h4>Location</h4><p>India (Remote-First Agency)</p></div>
                     </div>
-
                     <div class="contact-info-card">
                         <div class="info-icon"><i class="fas fa-clock"></i></div>
-                        <div>
-                            <h4>Working Hours</h4>
-                            <p>Mon - Sat: 10:00 AM - 7:00 PM IST</p>
-                        </div>
+                        <div><h4>Working Hours</h4><p>Mon - Sat: 10:00 AM - 7:00 PM IST</p></div>
                     </div>
-
                     <div class="contact-info-card">
                         <div class="info-icon"><i class="fas fa-language"></i></div>
-                        <div>
-                            <h4>Languages</h4>
-                            <p>English, Hindi</p>
-                        </div>
+                        <div><h4>Languages</h4><p>English, Hindi</p></div>
                     </div>
 
-                    <!-- Social -->
                     <div style="margin-top: 30px;">
                         <h4 style="font-family: var(--font-heading); color: var(--white); margin-bottom: 14px;">Follow Us</h4>
                         <div class="footer-social">
@@ -130,9 +90,8 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="contact-form" data-aos="fade-left">
-                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--white); margin-bottom: 24px;">Send Us a Message</h3>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--white); margin-bottom: 24px; letter-spacing: -0.3px;">Send Us a Message</h3>
                     <form id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
@@ -186,7 +145,6 @@
         </div>
     </section>
 
-    <!-- Map / CTA -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content" data-aos="zoom-in">
@@ -200,14 +158,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
-                    </a>
+                    <a href="index.html" class="footer-logo"><span class="logo-text">Digion<span class="logo-highlight">Top</span></span></a>
                     <p>India's remote-first digital marketing agency delivering SEO, web development, social media, PPC and e-commerce solutions.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -217,46 +172,19 @@
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#seo">SEO Optimization</a></li>
-                        <li><a href="services.html#web-design">Web Development</a></li>
-                        <li><a href="services.html#social-media">Social Media</a></li>
-                        <li><a href="services.html#ppc">PPC Advertising</a></li>
-                        <li><a href="services.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li>
-                        <li><i class="fas fa-language"></i> English, Hindi</li>
-                    </ul>
-                </div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#seo">SEO Optimization</a></li><li><a href="services.html#web-design">Web Development</a></li><li><a href="services.html#social-media">Social Media</a></li><li><a href="services.html#ppc">PPC Advertising</a></li><li><a href="services.html#ecommerce">E-Commerce</a></li></ul></div>
+                <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li><li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li><li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li><li><i class="fas fa-language"></i> English, Hindi</li></ul></div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 DigionTop. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
             </div>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://wa.me/919217594664" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></a>
     <script src="js/main.js"></script>
 </body>
 </html>

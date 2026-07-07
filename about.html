@@ -11,26 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div id="preloader"><div class="loader"><span class="loader-text">DIGIONTOP</span><div class="loader-bar"></div></div></div>
+    <div class="page-transition" id="pageTransition"><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div><div class="pt-slice"></div></div>
+    <canvas id="particleCanvas"></canvas>
 
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-            <span class="loader-text">DigionTop</span>
-            <div class="loader-bar"></div>
-        </div>
-    </div>
-
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-follower"></div>
-
-    <!-- Navigation -->
     <header id="header">
         <nav class="navbar">
             <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
-                </a>
+                <a href="index.html" class="logo"><span class="logo-text">Digion<span class="logo-highlight">Top</span></span></a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link active">About</a></li>
@@ -48,28 +36,20 @@
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
-                    <div class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
         <h1 data-aos="fade-up">About <span class="gradient-text">Us</span></h1>
         <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
-            <a href="index.html">Home</a>
-            <span>/</span>
-            <span>About Us</span>
+            <a href="index.html">Home</a><span>/</span><span>About Us</span>
         </div>
     </section>
 
-    <!-- About Detail -->
     <section class="about-section">
         <div class="container">
             <div class="about-grid">
@@ -77,28 +57,19 @@
                     <span class="section-tag">Our Story</span>
                     <h2 class="section-title">Building Digital <span class="gradient-text">Success Stories</span></h2>
                     <p>DigionTop started with a simple mission — help businesses grow online with honest, data-driven digital marketing. As India's remote-first agency, we bring together the best talent from across the country.</p>
-                    <p>We believe in transparency, results, and building long-term partnerships. Every campaign we run, every website we build, and every strategy we craft is designed to deliver measurable growth for your business.</p>
+                    <p>We believe in transparency, results, and building long-term partnerships. Every campaign we run, every website we build, and every strategy we craft is designed to deliver measurable growth.</p>
                     <div class="about-features">
                         <div class="about-feature">
                             <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-                            <div>
-                                <h4>Mission</h4>
-                                <p>To empower businesses with digital strategies that drive real, measurable growth.</p>
-                            </div>
+                            <div><h4>Mission</h4><p>To empower businesses with digital strategies that drive real, measurable growth.</p></div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon"><i class="fas fa-eye"></i></div>
-                            <div>
-                                <h4>Vision</h4>
-                                <p>To be India's most trusted and result-oriented digital marketing partner.</p>
-                            </div>
+                            <div><h4>Vision</h4><p>To be India's most trusted and result-oriented digital marketing partner.</p></div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                            <div>
-                                <h4>Values</h4>
-                                <p>Transparency, innovation, accountability, and client-first approach in everything we do.</p>
-                            </div>
+                            <div><h4>Values</h4><p>Transparency, innovation, accountability, and client-first approach in everything we do.</p></div>
                         </div>
                     </div>
                 </div>
@@ -106,22 +77,10 @@
                     <div class="about-image-wrapper">
                         <div class="about-pattern"></div>
                         <div class="about-stats-card">
-                            <div class="mini-stat">
-                                <i class="fas fa-trophy"></i>
-                                <div>
-                                    <strong>98%</strong>
-                                    <span>Client Satisfaction</span>
-                                </div>
-                            </div>
+                            <div class="mini-stat"><i class="fas fa-trophy"></i><div><strong>98%</strong><span>Client Satisfaction</span></div></div>
                         </div>
                         <div class="about-stats-card card-2">
-                            <div class="mini-stat">
-                                <i class="fas fa-arrow-trend-up"></i>
-                                <div>
-                                    <strong>3x</strong>
-                                    <span>Average ROI</span>
-                                </div>
-                            </div>
+                            <div class="mini-stat"><i class="fas fa-arrow-trend-up"></i><div><strong>3x</strong><span>Average ROI</span></div></div>
                         </div>
                     </div>
                 </div>
@@ -129,39 +88,33 @@
         </div>
     </section>
 
-    <!-- Stats -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item" data-aos="zoom-in">
                     <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                    <h3 class="counter" data-count="150">0</h3>
-                    <span class="stat-plus">+</span>
+                    <h3 class="counter" data-count="150">0</h3><span class="stat-plus">+</span>
                     <p>Projects Completed</p>
                 </div>
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="stat-icon"><i class="fas fa-smile"></i></div>
-                    <h3 class="counter" data-count="50">0</h3>
-                    <span class="stat-plus">+</span>
+                    <h3 class="counter" data-count="50">0</h3><span class="stat-plus">+</span>
                     <p>Happy Clients</p>
                 </div>
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
                     <div class="stat-icon"><i class="fas fa-award"></i></div>
-                    <h3 class="counter" data-count="5">0</h3>
-                    <span class="stat-plus">+</span>
+                    <h3 class="counter" data-count="5">0</h3><span class="stat-plus">+</span>
                     <p>Years Experience</p>
                 </div>
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
                     <div class="stat-icon"><i class="fas fa-globe"></i></div>
-                    <h3 class="counter" data-count="10">0</h3>
-                    <span class="stat-plus">+</span>
+                    <h3 class="counter" data-count="10">0</h3><span class="stat-plus">+</span>
                     <p>Industries Served</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
     <section class="team-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
@@ -170,29 +123,25 @@
                 <p class="section-desc">A talented team of digital marketing professionals passionate about driving results.</p>
             </div>
             <div class="team-grid">
-                <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="team-card" data-aos="fade-up">
                     <div class="team-avatar">JS</div>
-                    <h4>Jassi Singh</h4>
-                    <span>Founder & CEO</span>
+                    <h4>Jassi Singh</h4><span>Founder & CEO</span>
                     <p>Digital marketing strategist with 5+ years of experience helping brands grow online.</p>
                 </div>
                 <div class="team-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-avatar">AK</div>
-                    <h4>Ankit Kumar</h4>
-                    <span>SEO Lead</span>
+                    <h4>Ankit Kumar</h4><span>SEO Lead</span>
                     <p>Expert in technical SEO, link building, and organic growth strategies.</p>
                 </div>
                 <div class="team-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-avatar">NR</div>
-                    <h4>Neha Rawat</h4>
-                    <span>Creative Director</span>
+                    <h4>Neha Rawat</h4><span>Creative Director</span>
                     <p>Creative mind behind our stunning designs, brand identities, and visual campaigns.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content" data-aos="zoom-in">
@@ -205,14 +154,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-text">Digion<span class="logo-highlight">Top</span></span>
-                    </a>
+                    <a href="index.html" class="footer-logo"><span class="logo-text">Digion<span class="logo-highlight">Top</span></span></a>
                     <p>India's remote-first digital marketing agency delivering SEO, web development, social media, PPC and e-commerce solutions.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -222,46 +168,19 @@
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#seo">SEO Optimization</a></li>
-                        <li><a href="services.html#web-design">Web Development</a></li>
-                        <li><a href="services.html#social-media">Social Media</a></li>
-                        <li><a href="services.html#ppc">PPC Advertising</a></li>
-                        <li><a href="services.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li>
-                        <li><i class="fas fa-language"></i> English, Hindi</li>
-                    </ul>
-                </div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#seo">SEO Optimization</a></li><li><a href="services.html#web-design">Web Development</a></li><li><a href="services.html#social-media">Social Media</a></li><li><a href="services.html#ppc">PPC Advertising</a></li><li><a href="services.html#ecommerce">E-Commerce</a></li></ul></div>
+                <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-envelope"></i> <a href="mailto:digiontop.agency@gmail.com">digiontop.agency@gmail.com</a></li><li><i class="fas fa-phone"></i> <a href="tel:+919217594664">+91-9217594664</a></li><li><i class="fas fa-map-marker-alt"></i> India (Remote-First)</li><li><i class="fas fa-language"></i> English, Hindi</li></ul></div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 DigionTop. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
             </div>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://wa.me/919217594664" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></a>
     <script src="js/main.js"></script>
 </body>
 </html>

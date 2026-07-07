@@ -29,14 +29,22 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
-            <span class="loader-text">DigionTop</span>
+            <span class="loader-text">DIGIONTOP</span>
             <div class="loader-bar"></div>
         </div>
     </div>
 
-    <!-- Cursor -->
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-follower"></div>
+    <!-- Page Transition -->
+    <div class="page-transition" id="pageTransition">
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+    </div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
 
     <!-- Navigation -->
     <header id="header">
@@ -62,7 +70,7 @@
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+                    <a href="contact.html" class="btn btn-primary nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
                     <div class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
@@ -75,12 +83,11 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg-animation">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <div class="floating-shape shape-4"></div>
-            <div class="grid-overlay"></div>
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+            <div class="hero-grid-bg"></div>
         </div>
         <div class="container">
             <div class="hero-content">
@@ -88,15 +95,15 @@
                     <span class="badge-dot"></span>
                     India's #1 Remote-First Digital Agency
                 </div>
-                <h1 class="hero-title" data-aos="fade-up">
-                    We Build Digital
-                    <span class="gradient-text">Experiences</span>
-                    That Drive Growth
+                <h1 class="hero-title">
+                    <span class="line"><span class="line-inner">We Build Digital</span></span>
+                    <span class="line"><span class="line-inner"><span class="gradient-text">Experiences</span> That</span></span>
+                    <span class="line"><span class="line-inner">Drive Growth</span></span>
                 </h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
                     From SEO to web development, social media to PPC — we craft data-driven strategies that transform businesses and deliver measurable results.
                 </p>
-                <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
                     <a href="contact.html" class="btn btn-primary btn-lg">
                         Start Your Project
                         <i class="fas fa-arrow-right"></i>
@@ -105,7 +112,7 @@
                         Our Services
                     </a>
                 </div>
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
                     <div class="hero-stat">
                         <span class="stat-number" data-count="150">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">Projects Delivered</span>
@@ -123,40 +130,40 @@
         </div>
         <div class="hero-scroll">
             <a href="#services" class="scroll-indicator">
-                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-text">Scroll</span>
                 <span class="scroll-line"></span>
             </a>
         </div>
     </section>
 
-    <!-- Trusted By / Marquee -->
+    <!-- Marquee -->
     <section class="marquee-section">
         <div class="marquee-wrapper">
             <div class="marquee-track">
                 <div class="marquee-item">SEO Optimization</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Web Development</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Social Media Marketing</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">PPC Advertising</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">E-Commerce Solutions</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Content Marketing</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Brand Strategy</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">SEO Optimization</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Web Development</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">Social Media Marketing</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">PPC Advertising</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
                 <div class="marquee-item">E-Commerce Solutions</div>
-                <div class="marquee-item">★</div>
+                <div class="marquee-item star">&#9679;</div>
             </div>
         </div>
     </section>
@@ -167,55 +174,43 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">What We Do</span>
                 <h2 class="section-title">Services We <span class="gradient-text">Offer</span></h2>
-                <p class="section-desc">We provide end-to-end digital marketing solutions tailored to your business goals.</p>
+                <p class="section-desc">End-to-end digital marketing solutions tailored to your business goals.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
                     <h3>SEO Optimization</h3>
-                    <p>Dominate search rankings with our proven SEO strategies. We optimize your website for maximum visibility and organic traffic growth.</p>
+                    <p>Dominate search rankings with our proven SEO strategies. Maximum visibility and organic traffic growth.</p>
                     <a href="services.html#seo" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
                     <h3>Web Development</h3>
-                    <p>Custom websites that convert visitors into customers. Modern, responsive designs built with cutting-edge technology.</p>
+                    <p>Custom websites that convert visitors into customers. Modern, responsive designs with cutting-edge tech.</p>
                     <a href="services.html#web-design" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
                     <h3>Social Media Marketing</h3>
-                    <p>Build your brand presence across all social platforms. Engaging content strategies that grow your audience and drive engagement.</p>
+                    <p>Build your brand across all social platforms. Engaging content that grows your audience and drives results.</p>
                     <a href="services.html#social-media" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="service-icon">
-                        <i class="fas fa-ad"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-ad"></i></div>
                     <h3>PPC Advertising</h3>
-                    <p>Maximize your ROI with targeted pay-per-click campaigns. Google Ads, Meta Ads, and more — data-driven for best results.</p>
+                    <p>Maximize your ROI with targeted campaigns. Google Ads, Meta Ads — data-driven for best results.</p>
                     <a href="services.html#ppc" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
                     <h3>E-Commerce Solutions</h3>
-                    <p>Launch and scale your online store with our e-commerce expertise. Shopify, WooCommerce, and custom solutions.</p>
+                    <p>Launch and scale your online store. Shopify, WooCommerce, and custom e-commerce solutions.</p>
                     <a href="services.html#ecommerce" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
                     <h3>Content Marketing</h3>
-                    <p>Compelling content that tells your brand story. Blog posts, videos, infographics — content that converts and engages.</p>
+                    <p>Compelling content that tells your brand story. Blogs, videos, infographics — content that converts.</p>
                     <a href="services.html#content" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -397,9 +392,9 @@
                     </div>
                 </div>
                 <div class="testimonial-controls">
-                    <button class="test-btn prev-btn" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+                    <button type="button" class="test-btn prev-btn" id="prevBtn" title="Previous testimonial" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
                     <div class="testimonial-dots" id="testimonialDots"></div>
-                    <button class="test-btn next-btn" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+                    <button type="button" class="test-btn next-btn" id="nextBtn" title="Next testimonial" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -475,10 +470,13 @@
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919217594664" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></a>
 
     <script src="js/main.js"></script>
 </body>
